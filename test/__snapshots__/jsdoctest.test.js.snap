@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`jsdoctest/2 Title background="blue">My blue Title should match its snapshot 1`] = `
+<h1
+  className="sc-bdVaJa iZZxRE"
+>
+  My blue Title
+</h1>
+`;
+
+exports[`jsdoctest/2 Title>MyTitle should match its snapshot 1`] = `
+<h1
+  className="sc-bdVaJa bcwPgF"
+>
+  MyTitle
+</h1>
+`;
