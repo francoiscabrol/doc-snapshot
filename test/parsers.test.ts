@@ -6,7 +6,7 @@ const stringModuleFile = fs.readFileSync(stringModulePath, 'utf8')
 
 describe('parsers', () => {
   describe('snapshotLineNumbersFor/1', () => {
-    it('returns a list of line numbers that have @example in them', () => {
+    it('returns a list of line numbers that have @snapshot in them', () => {
       const snapshotLineNumbersFor = parsers.snapshotLineNumbersFor(
         stringModuleFile
       )
@@ -15,12 +15,12 @@ describe('parsers', () => {
   })
 
   describe('functionCallStringFor/2', () => {
-    it('should return the string version of the example function call 1', () => {
+    it('should return the string version of the snapshot function call 1', () => {
       expect(parsers.functionCallStringFor(stringModuleFile, 7)).toEqual(
         '<Title>MyTitle</Title>'
       )
     })
-    it('should return the string version of the example function call 2', () => {
+    it('should return the string version of the snapshot function call 2', () => {
       expect(parsers.functionCallStringFor(stringModuleFile, 10)).toEqual(
         '<Title background="blue">My blue Title</Title>'
       )
